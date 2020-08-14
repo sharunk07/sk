@@ -50,7 +50,7 @@ html {
   10% {
     background-position: 420px 0; }
   100% {
-    background-position: 420px 0; } }
+    background-position: 680px 0; } }
 
 h1,
 h2,
@@ -87,7 +87,7 @@ main {
     main .icons a {
       padding: 0.8rem; }
       main .icons a:hover {
-        color: yellow;
+        color: gold;
         transition: all 0.6s ease-out; }
   main#home {
     overflow: hidden; }
@@ -97,7 +97,8 @@ main {
 .about-info {
   display: grid;
   grid-gap: 3rem;
-  grid-template-areas: "bio-image bio bio" "jobs-1 jobs-2 jobs-3";
+  grid-template-areas: "bio-image bio bio"
+ "jobs-1 jobs-2 jobs-3";
   grid-template-columns: repeat(3, 1fr); }
 
 .bio-image {
@@ -284,5 +285,10 @@ main {
       width: 13rem;
       background-color: black; }
   .about-info {
-    grid-template-areas: "bio-image" "bio" "bio" "jobs-1" "jobs-2" "jobs-3";
+    grid-template-areas: "bio-image"
+ "bio"
+ "bio"
+ "jobs-1"
+ "jobs-2"
+ "jobs-3";
     grid-template-columns: 1fr; } }
