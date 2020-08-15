@@ -292,5 +292,7 @@ main {
  "jobs-2"
  "jobs-3";
     grid-template-columns: 1fr; } 
-  .chrome:before {
-      left: 50px; }}
+  chrome:before {
+      content: "";
+    }
+  }
