@@ -31,3 +31,19 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+// Select all links
+const links = document.querySelectorAll('.link');
+
+// Add event listeners for hover effects
+links.forEach(link => {
+  link.addEventListener('mouseenter', () => {
+    link.style.transition = 'transform 0.3s ease-in-out, opacity 0.3s ease-in-out';
+    link.style.transform = 'scale(1.1)'; // Enlarge link slightly
+  });
+
+  link.addEventListener('mouseleave', () => {
+    link.style.transform = 'scale(1)'; // Reset scale
+  });
+});
+
