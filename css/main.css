@@ -296,3 +296,67 @@ main {
       content: "";
     }
   }
+
+body {
+  background-color: #000; /* Black background */
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.wrapper {
+  text-align: center;
+  padding: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Spacing between links */
+  margin-top: 20px;
+}
+
+.link {
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  color: white; /* Default link color */
+  font-weight: bold;
+}
+
+.color-yellow {
+  color: #f0a500; /* Yellow color */
+}
+
+.color-green {
+  color: #2ecc71; /* Green color */
+}
+
+.color-red {
+  color: #e74c3c; /* Red color */
+}
+
+/* Partial underline styling */
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 25%; /* Start partially underlined */
+  width: 50%; /* Only underline the middle */
+  height: 2px;
+  background-color: currentColor; /* Match underline to link color */
+  transition: all 0.3s ease-in-out; /* Smooth animation */
+}
+
+/* Full underline on hover */
+.link:hover::after {
+  left: 0; /* Extend to start of the link */
+  width: 100%; /* Cover full width */
+}
+
+/* Additional hover effects */
+.link:hover {
+  opacity: 0.9; /* Slightly dim the text */
+  transform: scale(1.05); /* Slight zoom effect */
+  transition: all 0.3s ease-in-out;
+}
+
