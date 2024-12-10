@@ -71,6 +71,7 @@ h3 {
 a {
   text-decoration: underline;
   color: white;
+  text-underline-offset: 4px;
 }
 
 
